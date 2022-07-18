@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Slider</title>
+    <script defer src="slider.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav"><h1 class="section__header">Slider component</h1></nav>
+    </header>
+    <section class="section">
+      <!-- use the class names as they are! -->
+      <!-- slider  -->
+      <div class="slider">
+        <!-- slides -->
+        <!-- add elements here -->
+        <div class="slide"><img src="img/img-1.jpg" alt="Photo 1" /></div>
+        <div class="slide"><img src="img/img-2.jpg" alt="Photo 2" /></div>
+        <div class="slide"><img src="img/img-3.jpg" alt="Photo 3" /></div>
+        <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div>
+
+        <!-- controller buttons -->
+        <!-- you may use desired icons but do not change class names -->
+        <button class="slider__btn slider__btn--left">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </button>
+        <button class="slider__btn slider__btn--right">
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+
+        <!-- indicator dots -->
+        <div class="dots"></div>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
